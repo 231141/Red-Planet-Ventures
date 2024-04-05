@@ -347,19 +347,37 @@ h3 {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    background-color:rgb(66, 66, 176);
+
+    color: white;
+    border: 150px;
+    border-color: black ;
+    margin-right: 150px;
+    padding-left: 100px;
+    padding-bottom: 50px;
 }
 
 #contact{
-    background-color: #f9f9f9;
+    
     padding: 2em 4em;
     width: 100%;
     margin: 50px 0;
 }
 
 #contact h3{
-    color: #5b7575;
+    color: #acaccb;
     display: block;
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     font-weight: 400;
+    margin: auto 0;
+   
+}
+
+fieldset{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+    padding: 0;
 }
