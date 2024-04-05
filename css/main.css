@@ -380,4 +380,17 @@ fieldset{
     min-width: 100%;
     width: 100%;
     padding: 0;
+
+}
+
+footer{
+    height: 300px;
+    background-color: rgb(104, 249, 150);
+
+}
+footer p{
+    font-size: 15px;
+    color: azure;
+    font-family: "Poppins", sans-serif;
+
 }
