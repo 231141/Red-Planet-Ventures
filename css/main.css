@@ -379,6 +379,19 @@ h3 {
     margin-right: 150px;
     padding-left: 100px;
     padding-bottom: 50px;
+    border:  thin solid #e4e4e4;
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.formContainer6 input, .formContainer6 textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 25px;
+    border: thin solid #f3e9e9;
+    margin-bottom: 25px;
 }
 
 #contact{
@@ -417,4 +430,11 @@ footer p{
     color: azure;
     font-family: "Poppins", sans-serif;
 
+}
+
+form{
+    border:  thin solid #e4e4e4;
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    color: #e4e4e4;
 }
