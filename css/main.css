@@ -438,3 +438,71 @@ form{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     color: #e4e4e4;
 }
+body{
+    background-color: #7600a4;
+ }
+ .stepper-input {   
+    display: flex;
+    font-size: 5em;
+    justify-content: center;
+    padding: 30px;
+   }
+ 
+   .stepper-input input{
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: 500;
+     font-size:  25px;
+   }
+    
+ .btn{
+    cursor: pointer;
+    padding: 1.5em;
+    color: #fff;
+    background-color: #9e3cc5;
+    border: 1px solid #9e3cc5;
+    font-size: 20px;
+ }
+ 
+ .btn:hover{
+    background-color: #7600a4;
+    color: #121212;
+    
+   }
+ 
+ .btn-left {  
+    border-radius: 10px 0 0 10px;
+ }
+ 
+ .btn-right{
+    border-radius: 0 10px 10px 0 ;
+ }
+ 
+ .input-box {
+    border: 1px solid #121212;
+    text-align: center;
+ }
+ 
+ .ticketSection {
+   border: 1px solid #00434663;
+   height: 380px;
+   width: 70%;
+   padding: 20px;
+   margin: auto;
+   margin-top: 5em;
+   border-radius: 1em;
+   box-shadow: 0px 3px 15px rgba(253, 254, 255, 0.589);
+ }
+ 
+ .ticketSection p {
+   border: none;
+   border-radius: 15px;
+   padding: 24px;
+   margin: 10px;
+   font-size: 40px;
+   text-align: center;
+   background: transparent;
+   color: #fff;
+   box-shadow: 0px 3px 15px rgba(253, 254, 255, 0.589);
+ }
+ 
+ 

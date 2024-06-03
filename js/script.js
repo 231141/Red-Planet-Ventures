@@ -33,3 +33,53 @@ function getValues(event){
     //this displays the data on the webpage
     document.getElementById('totalValue').innerHTML = "R" + totalValue;
 }
+function decreaseBook(){
+    if (document.getElementById('ticketsBook').value != 0){
+        document.getElementById('ticketsBook').value = parseInt(document.getElementById('ticketsBook').value) - 1;
+    } else{
+        document.getElementById('ticketsBook').value = 0;
+    }
+}
+
+function increaseBook(){
+    document.getElementById('ticketsBook').value = parseInt(document.getElementById('ticketsBook').value) + 1;
+}
+
+function decreaseMovie(){
+    if (document.getElementById('ticketsMovie').value != 0){
+        document.getElementById('ticketsMovie').value = parseInt(document.getElementById('ticketsMovie').value) - 1;
+    } else{
+        document.getElementById('ticketsMovie').value = 0;
+    }
+}
+
+function increaseMovie(){
+    document.getElementById('ticketsMovie').value = parseInt(document.getElementById('ticketsMovie').value) + 1;
+}
+
+function decreaseComic(){
+    if (document.getElementById('ticketsComic').value != 0){
+        document.getElementById('ticketsComic').value = parseInt(document.getElementById('ticketsComic').value) - 1;
+    } else{
+        document.getElementById('ticketsComic').value = 0;
+    }
+}
+
+function increaseComic(){
+    document.getElementById('ticketsComic').value = parseInt(document.getElementById('ticketsComic').value) + 1;
+}
+
+
+let totalBookCost = 0;
+let totalMovieCost = 0;
+let totalComicCost = 0;
+let finalCost = 0;
+
+function total(){
+    totalBookCost = parseInt(document.getElementById('ticketsBook').value) * 50;
+    totalMovieCost = parseInt(document.getElementById('ticketsMovie').value) * 70;
+    totalComicCost = parseInt(document.getElementById('ticketsComic').value) * 60;
+    finalCost = totalBookCost + totalMovieCost + totalComicCost;
+    document.getElementById('total').innerHTML = "R " + finalCost;
+}
+
