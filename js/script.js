@@ -1,15 +1,16 @@
-
+console.log("hi");
 //the form identifies with the variable "space-log"
 let form = document.forms["space-log"];
 //when users submit then the eventlistener gets values from the form
-form.addEventListener("submit", getValues);
+form.addEventListener("submitLog", getValues);
 //this starts an array in the variables
 let = spaceLog = [];
 
 //this function causes an event that gets the values
 function getValues(event){
+    console.log("hello");
     //this prevents page from reloading
-    event.preventDefault();
+    //event.preventDefault();
     //using formData as an object. it's an element that is an input for the form
     let formData = {
         "value": parseInt(this.value.value)
