@@ -10,7 +10,7 @@ let = spaceLog = [];
 function getValues(event){
     console.log("hello");
     //this prevents page from reloading
-    //event.preventDefault();
+    event.preventDefault();
     //using formData as an object. it's an element that is an input for the form
     let formData = {
         "value": parseInt(this.value.value)
@@ -42,6 +42,7 @@ function decreaseBook(){
 }
 
 function increaseBook(){
+    console.log("add");
     document.getElementById('ticketsBook').value = parseInt(document.getElementById('ticketsBook').value) + 1;
 }
 
