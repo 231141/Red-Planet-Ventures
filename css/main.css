@@ -438,71 +438,159 @@ form{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     color: #e4e4e4;
 }
-body{
-    background-color: #7600a4;
- }
- .stepper-input {   
-    display: flex;
-    font-size: 5em;
-    justify-content: center;
-    padding: 30px;
-   }
- 
-   .stepper-input input{
-     font-family:Verdana, Geneva, Tahoma, sans-serif;
-     font-weight: 500;
-     font-size:  25px;
-   }
-    
- .btn{
-    cursor: pointer;
-    padding: 1.5em;
-    color: #fff;
-    background-color: #9e3cc5;
-    border: 1px solid #9e3cc5;
-    font-size: 20px;
- }
- 
- .btn:hover{
-    background-color: #7600a4;
-    color: #121212;
-    
-   }
- 
- .btn-left {  
-    border-radius: 10px 0 0 10px;
- }
- 
- .btn-right{
-    border-radius: 0 10px 10px 0 ;
- }
- 
- .input-box {
-    border: 1px solid #121212;
-    text-align: center;
- }
- 
- .ticketSection {
-   border: 1px solid #00434663;
-   height: 380px;
-   width: 70%;
-   padding: 20px;
-   margin: auto;
-   margin-top: 5em;
-   border-radius: 1em;
-   box-shadow: 0px 3px 15px rgba(253, 254, 255, 0.589);
- }
- 
- .ticketSection p {
-   border: none;
-   border-radius: 15px;
-   padding: 24px;
-   margin: 10px;
-   font-size: 40px;
-   text-align: center;
-   background: transparent;
+
+.flexItemsss{
+    background-color: #731692;
+}
+
+
+.stepper-input {   
+   display: flex;
+   font-size: 4.5em;
+   justify-content: center;
+   padding: 35px;
+  }
+
+  .stepper-input input{
+    font-family:"Poppins", sans-serif;
+    font-weight: 450;
+    font-size:  30px;
+  }
+   
+.btn{
+   cursor: pointer;
+   padding: 1.4em;
    color: #fff;
-   box-shadow: 0px 3px 15px rgba(253, 254, 255, 0.589);
- }
- 
- 
+   background-color: #4fdcd0;
+   border: 1.5px solid #4fdcd0;
+   font-size: 25px;
+}
+
+.btn:hover{
+   background-color: #4fdcd0;
+   color: #0f0f0f;
+   
+  }
+
+.btn-left {  
+   border-radius: 15px 0 0 15px;
+}
+
+.btn-right{
+   border-radius: 0 15px 15px 0 ;
+}
+
+.input-box {
+   border: 1px solid #121212;
+   text-align: center;
+}
+
+.ticketSection {
+  border: 1px solid #033d4063;
+  height: 385px;
+  width: 72%;
+  padding: 25px;
+  margin: auto;
+  
+  border-radius: 1.5em;
+  box-shadow: 0px 3px 15px rgba(235, 240, 244, 0.557);
+}
+
+.ticketSection p {
+  border: none;
+  border-radius: 13px;
+  padding: 25px;
+  margin: 15px;
+  font-size: 42px;
+  text-align: center;
+  background: transparent;
+  color: #f8f0f0;
+  box-shadow: 0px 3px 15px rgba(253, 254, 255, 0.589);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    margin-right: auto; /* This will push the logo to the left */
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-button i {
+  color: #777;
+  font-size: 18px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

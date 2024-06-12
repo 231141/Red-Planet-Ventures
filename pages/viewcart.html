@@ -13,6 +13,9 @@
         link Google Font Files
         link CSS-->
 
+
+    <script src="../js/script.js"></script>;
+    
     <link rel="stylesheet" href="../css/main.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -42,7 +45,7 @@
         <header>
             <!--everything before the fold-->
         </header>
-        <section>
+       <!-- <section>
             <div class="flexContainer">
                 
                 <div class="flexItem2">
@@ -55,24 +58,43 @@
                 <div class="flexItem2"><img src="/assets/contactImage.png"> </div>
                 
             </div>
-            <form name="space-log">
-                <label>Value</label>
-                <input type="number" name="value">
-            
-                <!-- Submit button -->
-                <button type="submit" name="submit">Log</button>
-                </form>
-            <table class="summary">
-                <tr>
-                   <td colspan="2"><p>Total Amount of Cars Logged</p></td>
-                   <td colspan="2"><p id=carsTotalAmount></p></td>
-                </tr>
-                <tr>
-                   <td colspan="2"><p>Total Values of Cars Logged</p></td>
-                   <td colspan="2"><p id=totalValue></p></td>
-                </tr>
-             </table>
-        </section>
+           
+        </section>-->
+        
+  <div class="flexItemsss">
+    <table class="ticketSection">
+      <tr>
+        <td colspan="2"> <p>Mars Tickets</p></td>
+        <td colspan="2">  <div class="stepper-input">
+          <button class="btn btn-left" onclick="decreaseMars();total()">-</button>
+          <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+          <button class="btn btn-right" onclick="increaseMars();total()">+</button>
+       </div></td>
+      </tr>
+      
+      <tr>
+        <td colspan="2"> <p>Saturn Tickets</p></td>
+        <td colspan="2">  <div class="stepper-input">
+          <button class="btn btn-left" onclick="decreaseSaturn();total()">-</button>
+          <input type="text" value="0" class="input-box" id="ticketsSaturn" onchange="total()">
+          <button class="btn btn-right" onclick="increaseSaturn();total()">+</button>
+       </div></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"> <p>Box Tickets</p></td>
+        <td colspan="2">  <div class="stepper-input">
+          <button class="btn btn-left" onclick="decreaseBox();total()">-</button>
+          <input type="text" value="0" class="input-box" id="ticketsBox" onchange="total()">
+          <button class="btn btn-right" onclick="increaseBox();total()">+</button>
+       </div></td>
+      </tr>
+  
+      <tr>
+        <td colspan="4"> <p>Total: <span id="total"></span></p></td>
+      </tr>
+    </table>
+  </div>
         <section>
             <div class="flexContainer">
                 

@@ -1,9 +1,9 @@
-<!DOCTYPE html><!--type of html-->
+!DOCTYPE html><!--type of html-->
 <html lang="en"><!--html starts here-->
 <head><!--admin section-->
     <meta charset="UTF-8"><!--character set/ types of characters-->
     <meta http-equiv="X-UX-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0"><!--website as wide as browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--website as wide as browser-->
     <meta name="keyword" content="HTML, CSS, Template, Bootstrap"><!--search words for users-->
     <meta name="author" content="Clarissa, Wang, 231141">
     <title>Html Template</title>
@@ -12,6 +12,8 @@
         link javascript
         link Google Font Files
         link CSS-->
+
+        <script src="../js/script.js"></script>;
         
 
     <link rel="stylesheet" href="../css/main.css">
@@ -66,7 +68,7 @@
             </div>
             
                 <div class="formContainer6">
-                    <form id="contact">
+                    <form id="contact" name="SubmitForm">
                         <h3>Contact Us!</h3>
                     </form>    
                     <fieldset>
@@ -95,8 +97,21 @@
                         <textarea placeholder="Your message..." type="password" tabindex="7" required></textarea>
                     </fieldset>
                     <fieldset>
-                        <button name="SubmitForm" type="submit" id="contactFormSubmit" tabindex="">Submit</button>
+                        <button  type="submit" id="contactFormSubmit" tabindex="">Submit</button>
                     </fieldset>
+                    <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+
+                </div>
                 </div>
                 <!--<div class="form">
             <div class="form">
