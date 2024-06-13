@@ -153,3 +153,4 @@ searchForm.addEventListener('input', () => {
 saturnLink.addEventListener('click', () => {
   searchForm.submit();
 });
+
