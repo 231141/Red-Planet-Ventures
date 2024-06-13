@@ -136,3 +136,20 @@ window.onclick = function(event) {
   }
 }
 
+const searchForm = document.getElementById('search-form');
+const saturnLink = document.getElementById('saturn-link');
+
+searchForm.addEventListener('input', () => {
+  const searchTerm = searchForm.querySelector('input[name="search-term"]').value.toLowerCase();
+  if (searchTerm === 'saturn') {
+    searchForm.action = 'saturn.html';
+    saturnLink.style.display = 'inline';
+  } else {
+    searchForm.action = 'mars.html';
+    saturnLink.style.display = 'none';
+  }
+});
+
+saturnLink.addEventListener('click', () => {
+  searchForm.submit();
+});
