@@ -1,4 +1,4 @@
-!DOCTYPE html><!--type of html-->
+<!DOCTYPE html><!--type of html-->
 <html lang="en"><!--html starts here-->
 <head><!--admin section-->
     <meta charset="UTF-8"><!--character set/ types of characters-->
@@ -13,7 +13,7 @@
         link Google Font Files
         link CSS-->
 
-        <script src="../js/script.js"></script>;
+        <script src="../js/script.js"></script>
         
 
     <link rel="stylesheet" href="../css/main.css">
@@ -35,6 +35,12 @@
                 <a href="../index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a class="active" href="contact.html">Contact Us</a>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-button">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
             </div>
             
         </div>
@@ -96,11 +102,11 @@
                     <fieldset>
                         <textarea placeholder="Your message..." type="password" tabindex="7" required></textarea>
                     </fieldset>
-                    <fieldset>
+                    <!--<fieldset>
                         <button  type="submit" id="contactFormSubmit" tabindex="">Submit</button>
-                    </fieldset>
+                    </fieldset>-->
                     <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Open Modal</button>
+                <button id="myBtn">Submit</button>
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">

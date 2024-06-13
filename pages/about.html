@@ -81,7 +81,7 @@
                   <button class="btn btn-left" onclick="decreaseBox();total()">-</button>
                   <input type="text" value="0" class="input-box" id="ticketsBox" onchange="total()">
                   <button class="btn btn-right" onclick="increaseBox();total()">+</button>
-                  <button type="submit" name="submit">Log</button>
+                  <button class="logButton" type="submit" name="submit">Log</button>
                </div></td>
                
             </tr>
@@ -104,7 +104,7 @@
                       <button class="btn btn-left" onclick="decreaseMars();total()">-</button>
                       <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
                       <button class="btn btn-right" onclick="increaseMars();total()">+</button> 
-                      <button type="submit" name="submit">Log</button>
+                      <button class="logButton" type="submit" name="submit">Log</button>
                    </div></td>
                   </tr>
                </div></td>
@@ -131,7 +131,7 @@
                   <button class="btn btn-left" onclick="decreaseSaturn();total()">-</button>
                   <input type="text" value="0" class="input-box" id="ticketsSaturn" onchange="total()">
                   <button class="btn btn-right" onclick="increaseSaturn();total()">+</button>
-                  <button type="submit" name="submit">Log</button>
+                  <button class="logButton" type="submit" name="submit">Log</button>
                </div></td>
               </tr>
             </div>
@@ -152,7 +152,7 @@
                   <button class="btn btn-left" onclick="decreaseCellphone();total()">-</button>
                   <input type="text" value="0" class="input-box" id="ticketsBook" onchange="total()">
                   <button class="btn btn-right" onclick="increaseBook();total()">+</button>
-                  <button type="submit" name="submit">Log</button>
+                  <button class="logButton" type="submit" name="submit">Log</button>
                </div></td>
                
             </tr>
@@ -176,7 +176,7 @@
                   <button class="btn btn-left" onclick="decreaseBook();total()">-</button>
                   <input type="text" value="0" class="input-box" id="ticketsBook" onchange="total()">
                   <button class="btn btn-right" onclick="increaseBook();total()">+</button>
-                  <button type="submit" name="submit">Log</button>
+                  <button class="logButton" type="submit" name="submit">Log</button>
                </div></td>
                
             </tr>
@@ -211,19 +211,69 @@
             </div>
            
             
-        </div>
         <section>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">View Cart</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="flexItemsss">
+                    <table class="ticketSection">
+                    <tr>
+                        <td colspan="2"> <p>Mars Tickets</p></td>
+                        <td colspan="2">  <div class="stepper-input">
+                        <button class="btn btn-left" onclick="decreaseMars();total()">-</button>
+                        <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+                        <button class="btn btn-right" onclick="increaseMars();total()">+</button>
+                    </div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2"> <p>Saturn Tickets</p></td>
+                        <td colspan="2">  <div class="stepper-input">
+                        <button class="btn btn-left" onclick="decreaseSaturn();total()">-</button>
+                        <input type="text" value="0" class="input-box" id="ticketsSaturn" onchange="total()">
+                        <button class="btn btn-right" onclick="increaseSaturn();total()">+</button>
+                    </div></td>
+                    </tr>
+                
+                    <tr>
+                        <td colspan="2"> <p>Box Tickets</p></td>
+                        <td colspan="2">  <div class="stepper-input">
+                        <button class="btn btn-left" onclick="decreaseBox();total()">-</button>
+                        <input type="text" value="0" class="input-box" id="ticketsBox" onchange="total()">
+                        <button class="btn btn-right" onclick="increaseBox();total()">+</button>
+                    </div></td>
+                    </tr>
+                
+                    <tr>
+                        <td colspan="4"> <p>Total: <span id="total"></span></p></td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+
+            </div>
+            
+        </div>
+        </section>
+       <!-- <section>
             <div class="flexContainer4">
             <div class="button sum"><a href="viewcart.html">View cart</a></div>
             </div>
+        </section>-->
  <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+<!--<button id="myBtn">Open Modal</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+ The Modal 
+<div id="myModal" class="modal">-->
 
   <!-- Modal content -->
-  <div class="modal-content">
+<!-- <div class="modal-content">
     <span class="close">&times;</span>
     <div class="flexItemsss">
         <table class="ticketSection">
@@ -261,7 +311,7 @@
       </div>
   </div>
 
-</div>
+</div>-->
 
         </section>
     
